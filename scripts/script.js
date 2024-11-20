@@ -14,14 +14,11 @@ addEventListener('click', () => {
 }))
 
 document.addEventListener('scroll', () => {
-const desktopNav = document.querySelector('#desktop-nav');
-const hamburgerNav = document.querySelector('#hamburger-nav');
+const header = document.querySelector('header');
 
 if (window.scrollY > 0) {
-  desktopNav.classList.add('scrolled');
-  hamburgerNav.classList.add('scrolled');
+  header.classList.add('scrolled');
 } else {
-  desktopNav.classList.remove('scrolled');
-  hamburgerNav.classList.remove('scrolled');
+  header.classList.remove('scrolled');
 }
 })
