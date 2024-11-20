@@ -1,61 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erin Esteban</title>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/media.css"/>
-  </head>
-  <body>
-    <div class="banner"></div>
-    <header>
-      <nav class="desktop-nav">
-        <a href="#" class="nav-brand"> Erin </a>  
-          <ul class="nav-menu">
-            <li class="nav-item"> 
-              <a href="#about" class="nav-link">About</a> </li>
-            <li class="nav-item"> 
-              <a href="#experience" class="nav-link">Experience</a> </li>
-            <li class="nav-item"> 
-              <a href="#skills" class="nav-link">Skills</a> </li>
-            <li class="nav-item"> 
-              <a href="#projects" class="nav-link">Projects</a> </li>
-            <li class="nav-item"> 
-              <a href="#contacts" class="nav-link">Contacts</a> </li>
-          </ul>
-
-        <div class="hamburger-nav">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-    </header>
-    <section id="profile">
-      <div class="pic-container">
-        <img src="assets/author.png" alt="Author">
-      </div>
-      <div class="bio-section">
-        <h2>Erin Esteban</h2>
-        <p>Short bio about Erin Esteban. This section contains a brief introduction and background information.</p>
-      </div>
-      <div class="flex-container">
-        <div class="flex-item">
-          <h3>Flex Item 1</h3>
-          <p>Content for the first flex item.</p>
-        </div>
-        <div class="flex-item">
-          <h3>Flex Item 2</h3>
-          <p>Content for the second flex item.</p>
-        </div>
-        <div class="flex-item">
-          <h3>Flex Item 3</h3>
-          <p>Content for the third flex item.</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Erin Esteban</title>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/media.css" />
+	</head>
+	<body>
+		<div class="banner"></div>
+		<header>
+			<nav class="desktop-nav">
+				<a href="#" class="nav-brand">
+					<div class="logo-container">
+						<img
+							src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/9cc833b59536b825b79b74674d4f9f5545024ff0/assets/auth-logo.svg"
+							alt="Erin"
+							class="nav-logo"
+						/>
+					</div>
+				</a>
+				<ul class="nav-menu">
+					<li class="nav-item">
+						<a href="#introduction" class="nav-link">Introduction</a>
+					</li>
+					<li class="nav-item">
+						<a href="#skills" class="nav-link">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a href="#projects" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#experience" class="nav-link">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link">Contact</a>
+					</li>
+				</ul>
+				<div class="hamburger-nav">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</nav>
+		</header>
+		<section id="introduction">
+			<div class="bio-section">
+				<p>
+					I'm an aspiring web developer and I'm excited about learning new
+					technologies and building projects.
+				</p>
+				<button
+					class="cv-button"
+					onclick="window.open('https:/github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/Erin%20Esteban-CV.jpg?raw=true')"
+				>
+					Download CV
+				</button>
+				<button
+					class="github-button"
+					onclick="window.open('https:/github.com/erinmikaela')"
+				></button>
+				<button
+					class="email-button"
+					onclick="window.open('mailto:erinmikaela.esteban@tup.edu.ph')"
+				></button>
+				<button
+					class="fb-button"
+					onclick="window.open('https:/www.facebook.com/onlylokii')"
+				></button>
+			</div>
+			<div class="pic-container">
+				<img
+					src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/9cc833b59536b825b79b74674d4f9f5545024ff0/assets/author.svg"
+					alt="Author"
+				/>
+			</div>
+			<div class="auth-name">
+				<h1>Erin Mikaela Esteban</h1>
+				<p>3rd Year BSIS Student in TUP-Manila</p>
+			</div>
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			<div class="chart-container">
+				<img
+					src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/9cc833b59536b825b79b74674d4f9f5545024ff0/assets/skillschart.svg"
+					alt="Skills Chart"
+				/>
+			</div>
+		</section>
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project-container">
+				<div class="project-card">
+					<h3>Minesweeper</h3>
+					<div>
+						<img
+							src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/minesweeper1.jpg?raw=true"
+							alt="Project 1"
+						/>
+						<video controls width="600">
+							<source
+								src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/minesweeper.mp4?raw=true"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<p>
+						A classic minecweeper game made in C language. The user can reveal a
+						square by typing the coordinates (X,Y) within the 20x20 square area.
+						The score is then saved and can be viewed in the scoreboard.
+					</p>
+				</div>
+				<div class="project-card">
+					<h3>Math Tutor</h3>
+					<div>
+						<img
+							src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/mathtutor.jpg?raw=true"
+							alt="Project 2"
+						/>
+						<video controls width="600">
+							<source
+								src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/mathtutor.mp4?raw=true"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<p>
+						It helps the user perfom basic math calculation by generating random
+						2-digit addition, subtraction, multiplication, or division problems.
+						Math Tutor V2.0 is the final version of our C programming activity
+						that incorporates all of our previous lessons such as, loops,
+						functions, switch cases, and learning how to use srand() function.
+					</p>
+				</div>
+				<div class="project-card">
+					<h3>ASCII Painter</h3>
+					<div>
+						<img
+							src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/asciipainter1.jpg?raw=true"
+							alt="Project 2"
+						/>
+						<video controls width="600">
+							<source
+								src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/asciipainter.mp4?raw=true"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<p>
+						An open art canvas inspired by pixel art tools.This is the first
+						group project we made in programming. It can import and export
+						creations made through the program. We added wide variety of colors
+						to choose from, and the user can move the cursor pointer using WASD.
+					</p>
+				</div>
+				<div class="project-card">
+					<h3>ATM Simulation</h3>
+					<div>
+						<img
+							src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/ATMsimulation.jpg?raw=true"
+							alt="Project 2"
+						/>
+						<video controls width="600">
+							<source
+								src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/ATMsimulation.mp4?raw=true"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<p>
+						This ATM Simulation program can create new account, login existing
+						account/s, view balance inquiry, withdraw and deposit money, perform
+						fund transfer, and change PIN number.
+					</p>
+				</div>
+				<div class="project-card">
+					<h3>School Admin Database Website</h3>
+					<div>
+						<img
+							src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/javawebsite1.jpg?raw=true"
+							alt="Project 2"
+							style="height: 41vh"
+						/>
+						<video controls width="600">
+							<source
+								src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/javawebsite.mp4?raw=true"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<p>
+						It is database management system for a fictional university. School
+						admins can insert, delete, modify, and view student records through
+						this system. This is the only project I made in java that
+						incorporates the jswing and jframe function.
+					</p>
+				</div>
+				<div class="project-card">
+					<h3>Ticket Booking App Prototype</h3>
+					<div>
+						<img
+							src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/figmaprototype.png?raw=true"
+							alt="Project 2"
+						/>
+						<video controls width="600">
+							<source
+								src="https://github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/figmaprototype.mp4?raw=true"
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<p>
+						It is ticket booking prototype for mobile devices. It allows the
+						user to search the newest events, concert, or movies. It also has a
+						search filter function that can filter the events by date, location,
+						and category. This is our first and only project made in figma and
+						it helped me to understand the basics of UI/UX.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="experience">
+			<h2>Experience</h2>
+			<div class="experience-container">
+				<div class="experience-card">
+					<h3>Nmap: Basic Network Scan</h3>
+					<p>Relevant Coursework: Information Assurance and Security 1</p>
+					<p>
+						Acquired basic knowledge of Network security tools as part of the
+						coursework; with practical knowledge in the use of Nmap. Learned to
+						perform simple network scans, identify open ports and obtain system
+						details on the strength of their security.
+					</p>
+					<p>TUP-Manila, Philippines</p>
+				</div>
+				<div class="experience-card">
+					<h3>OpenVAS and Nessus: Vulnerability Scan</h3>
+					<p>Relevant Coursework: Information Assurance and Security 1</p>
+					<p>
+						Learned skills in vulnerability assessment in both OpenVAS and
+						Nessus. Conducted basic vulnerability scans on local hosts and
+						websites, as well as synthesizing the test outcomes to demonstrate
+						likelihood of threats and strengthen safety measures.
+					</p>
+					<p>TUP-Manila, Philippines</p>
+				</div>
+				<div class="experience-card">
+					<h3>Cisco Packet Tracer</h3>
+					<p>Relevant Coursework: IT Infrastructure and Network Technologies</p>
+					<p>Gained hands-on experience in network simulation, focusing on configuring ip addresses, VLAN configuration, static routing, DNS, etc. Constructed small network simulations  to analyze the problems with connectivity and quality.</p>
+					<p>TUP-Manila, Philippines</p>
+				</div>
+        <div class="experience-card">
+					<h3>FoxPro</h3>
+					<p>Relevant Coursework: Information Management</p>
+					<p>Acquired experience in FoxPro such as creation of databases, development of queries and modification of data. Also learned the principles of designing and managing information systems to support information processing activities.</p>
+					<p>TUP-Manila, Philippines</p>
+				</div>
+        <div class="experience-card">
+					<h3>Bootstrap</h3>
+					<p>HTML, CSS, JavaScript Framework</p>
+					<p>Learned to use Bootstrap to create responsive and visually appealing websites. Gained experience with pre-designed components, grid systems, and customization techniques to streamline front-end development.</p>
+					<p>TUP-Manila, Philippines</p>
+				</div>
+			</div>
+		</section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <form>
+          <div class="form-container">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-container">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send</button>
+        </form>
+        <div class="social-media">
+          <a href="https:/www.facebook.com/onlylokii" class="social-icon">
+            <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/facebook-brands-solid.svg" alt="Facebook">
+          </a>
+          <a href="mailto:erinmikaela.esteban@tup.edu.ph" class="social-icon">
+            <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/envelope-open-text-solid.svg" alt="Email">
+          </a>
+          <a href="https://www.linkedin.com/login"  class="social-icon">
+            <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/linkedin-brands-solid.svg" alt="LinkedIn">
+          </a>
+          <a href="https:/github.com/erinmikaela" class="social-icon">
+            <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/github-brands-solid.svg" alt="GitHub">
+          </a>
         </div>
       </div>
     </section>
-
-    <script src="scripts/script.js"></script>
-  </body>
+		<footer>
+			<p>&copy; 2024 Erin Mikaela Esteban. All rights reserved.</p>
+		</footer>
+		<script src="scripts/script.js"></script>
+	</body>
 </html>
