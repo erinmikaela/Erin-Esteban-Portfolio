@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*border: red solid 1px;*/
+  border: red solid 1px;
 }
 
 body {
@@ -24,10 +24,9 @@ p {
 }
 
 .banner {
-  width: 1260px;
-  height: 70vh;
-  background-position: initial; 
-  background-size: 100%;
+  width: 100%;
+  background-position: initial;
+  background-size:contain; /* Ensures the background image covers the entire div */
   background-repeat: no-repeat;
   background-image: url(https://raw.githubusercontent.com/erinmikaela/personal-blog/41a2c0ba425a6c040a775b92267791f955533ec3/ASSETS/banner.svg);
   background-attachment: fixed;
@@ -87,64 +86,19 @@ section {
     height: 2rem;
 }
 
-/*Buttons*/
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-    background-color:antiquewhite
-}
-
-.btn-color-1,
-.btn-color-2 {
-    border: rgb(53,53,53) 0.1 rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-    background-color: rgb(53,53,53);
-    color: white;
-}
-
-.btn-color-1:hover {
-    background-color: rgb(0,0,0);
-}
-
-.btn-color-2 {
-    background: none;
-}
-
-.btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
-}
-
-.btn-container {
-    gap:1rem;
-}
-
 #desktop-nav.scrolled {
   /*background-color: aquamarine;*/
   background-color: #dbdbdb71;
   opacity: 0.90;
+  transition: background-color 0.4s ease-in-out;
 }
 
 /*Header (Navigation Menus)*/
 header {
   /*background-color:blue;*/
   background-color:#f8f8f0;
+  position: sticky;
+  top: 0;
 }
 
 li {
@@ -157,7 +111,7 @@ a {
 }
 
 .desktop-nav {
-  min-height: 70px;
+  min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -217,4 +171,3 @@ a {
   background-color: #dbdbdb71;
   opacity: 0.90;
 }
-
