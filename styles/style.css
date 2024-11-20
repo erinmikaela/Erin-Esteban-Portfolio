@@ -1,0 +1,220 @@
+/* General Style*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border: red solid 1px;*/
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 1000vh;
+  background-color: #f8f8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+.banner {
+  width: 1260px;
+  height: 70vh;
+  background-position: initial; 
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(https://raw.githubusercontent.com/erinmikaela/personal-blog/41a2c0ba425a6c040a775b92267791f955533ec3/ASSETS/banner.svg);
+  background-attachment: fixed;
+}
+
+/*Section*/
+section {
+    padding-top: 4vh;
+    height: 100vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/*Profile Section*/
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 500px;
+    width: 500px;
+}
+
+.section__text {
+    text-align: center;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    text-align: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+/*Icons*/
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*Buttons*/
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    background-color:antiquewhite
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53,53,53) 0.1 rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background-color: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background-color: rgb(0,0,0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container {
+    gap:1rem;
+}
+
+#desktop-nav.scrolled {
+  /*background-color: aquamarine;*/
+  background-color: #dbdbdb71;
+  opacity: 0.90;
+}
+
+/*Header (Navigation Menus)*/
+header {
+  /*background-color:blue;*/
+  background-color:#f8f8f0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.desktop-nav {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+  /*
+  desktop-nav sticky nav bar
+  height: 6rem;
+  position: sticky;
+  top: 0;
+  transition: background-color 0.4s ease-in-out;*/
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .nav-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    transition: 0.7s ease;
+  }
+
+  .nav-link:hover {
+    color: dodgerblue;
+  }
+
+  .hamburger-nav {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+  }
+
+#hamburger-nav {
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f0;
+  height: 6rem;
+  transition: background-color 0.4s ease-in-out;
+}
+
+#hamburger-nav.scrolled {
+  background-color: #dbdbdb71;
+  opacity: 0.90;
+}
+
