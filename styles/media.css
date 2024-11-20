@@ -1,3 +1,4 @@
+/* Styles for screens up to 1200px */
 @media screen and (max-width: 1200px) {
 	#desktop-nav {
 		display: none;
@@ -26,10 +27,11 @@
 	}
 
 	.banner {
-		height: 36vh;
+		height: 49vh;
 	}
 }
 
+/* Styles for screens up to 768px */
 @media screen and (max-width: 768px) {
 	#profile {
 		height: 85vh;
@@ -86,4 +88,80 @@
 	.nav-menu.active {
 		left: 0;
 	}
+
+	.banner {
+		height: 35vh;
+	}
 }
+
+/* Styles for screens up to 425px */
+@media screen and (max-width: 425px) {
+	.section__text__p2 {
+		font-size: 1rem;
+	}
+
+	.title {
+		font-size: 1.5rem;
+	}
+
+	.section__pic-container {
+		height: 40vw;
+		width: 40vw;
+	}
+
+	.banner {
+		height: 20vh;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.section__text__p2 {
+		font-size: 0.9rem;
+	}
+
+	.title {
+		font-size: 1.25rem;
+	}
+
+	.section__pic-container {
+		height: 35vw;
+		width: 35vw;
+	}
+
+	.banner {
+		height: 18vh;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.section__text__p2 {
+		font-size: 0.8rem;
+	}
+
+	.title {
+		font-size: 1rem;
+	}
+
+	.section__pic-container {
+		height: 30vw;
+		width: 30vw;
+	}
+
+	.banner {
+		height: 15vh;
+	}
+}
+
+/* Styles for screens larger than 1200px */
+@media screen and (min-width: 1301px) {
+	.banner {
+		height: 50vh; 
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.banner {
+		height: 60vh; 
+	}
+}
+
