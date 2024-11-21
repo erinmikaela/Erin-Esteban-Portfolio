@@ -4,12 +4,20 @@
 		height: 59vh;
 	}
 
+	#skills {
+		height: 220vh;
+	}
+
 	#projects {
-		height: 510vh;
+		height: 610vh;
 	}
 
 	#experience {
-		height: 300vh;
+		height: 340vh;
+	}
+
+	#contact {
+		height: 150vh;
 	}
 }
 
@@ -62,6 +70,7 @@
 		padding: 1rem;
 		flex-direction: row;
 		gap: 0;
+		height: 120vh;
 	}
 
 	.bio-section {
@@ -79,19 +88,19 @@
 	}
 
 	.banner {
-		height: 49vh;
+		height: 66vh;
 	}
 
 	#skills {
-		height: 110vh;
+		height: 150vh;
 	}
 
 	#projects {
-		height: 430vh;
+		height: 530vh;
 	}
 
 	#experience {
-		height: 310vh;
+		height: 360vh;
 	}
 }
 
@@ -102,6 +111,8 @@
 		margin: 0 2rem;
 		display: flex;
 		justify-content: flex-start;
+		flex-direction: column-reverse;
+		height: 118vh;
 	}
 
 	.hamburger-nav {
@@ -127,11 +138,11 @@
 	}
 
 	.nav-item {
-		margin: 1rem 0;
+		margin: 0.1rem 0;
 	}
 
 	.banner {
-		height: 37vh;
+		height: 51vh;
 	}
 
 	.contact-container {
@@ -143,9 +154,20 @@
 		height: 25px;
 	}
 
+	.pic-container {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 0rem;
+	}
+
+	.pic-container img {
+		border-radius: 50%;
+	}
+
 	.bio-section {
+		text-align: center;
 		max-width: 400px;
-		margin-top: -2rem;
+		margin-top: 0.5rem;
 	}
 
 	.auth-name {
@@ -154,10 +176,11 @@
 
 	.auth-name h1 {
 		font-size: 2rem;
+		text-align: center;
 	}
 
 	#skills {
-		height: 90vh;
+		height: 130vh;
 	}
 
 	#skills h2 {
@@ -165,7 +188,7 @@
 	}
 
 	#projects {
-		height: 900vh;
+		height: 1100vh;
 	}
 
 	#projects h2 {
@@ -205,7 +228,7 @@
 	}
 
 	#experience {
-		height: 290vh;
+		height: 350vh;
 	}
 
 	#experience h2 {
@@ -246,7 +269,7 @@
 }
 
 /* Styles for screens up to 425px */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 	#introduction {
 		display: flex;
 		padding: 1rem;
@@ -279,7 +302,7 @@
 	}
 
 	.nav-item {
-		margin: 1rem 0;
+		margin: 0.1rem 0;
 	}
 
 	.banner {
@@ -307,15 +330,25 @@
 	.bio-section {
 		text-align: center;
 		max-width: 100%;
-		margin-top: -2rem;
+		margin-top: 1rem;
+	}
+
+	.bio-section p {
+		font-size: 0.9rem;
 	}
 
 	.auth-name {
 		text-align: center;
+		padding-bottom: 0.5rem;
+	}
+
+	.auth-name p {
+		font-size: 0.9rem;
 	}
 
 	.auth-name h1 {
-		font-size: 2.5rem;
+		font-size: 1.5rem;
+		text-align: center;
 	}
 
 	#skills {
@@ -324,14 +357,22 @@
 
 	#skills h2 {
 		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	#projects {
-		height: 630vh;
+		height: 780vh;
 	}
 
 	#projects h2 {
 		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.project-container {
@@ -367,11 +408,15 @@
 	}
 
 	#experience {
-		height: 430vh;
+		height: 530vh;
 	}
 
 	#experience h2 {
 		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.experience-container {
@@ -388,6 +433,10 @@
 
 	#contact h2 {
 		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.contact-container {
@@ -407,18 +456,14 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
-	.banner {
-		height: 18vh;
-	}
-
+@media screen and (max-width: 376px) {
 	#introduction {
 		display: flex;
 		padding: 1rem;
 		flex-direction: column-reverse;
 		justify-content: flex-start;
-		margin: 0 1rem;
-		height: 100vh;
+		margin: 0 2rem;
+		height: 110vh;
 	}
 
 	.hamburger-nav {
@@ -444,11 +489,15 @@
 	}
 
 	.nav-item {
-		margin: 1rem 0;
+		margin: 0.1rem 0;
+	}
+
+	.banner {
+		height: 25vh;
 	}
 
 	.contact-container {
-		padding: 1rem;
+		padding: 0.5rem;
 	}
 
 	.social-icon img {
@@ -457,9 +506,8 @@
 	}
 
 	.pic-container {
-		width: 150px;
-		height: 150px;
-		margin-bottom: 1rem;
+		width: 140px;
+		height: 140px;
 	}
 
 	.pic-container img {
@@ -469,15 +517,25 @@
 	.bio-section {
 		text-align: center;
 		max-width: 100%;
-		margin-top: -2rem;
+		margin-top: 1rem;
+	}
+
+	.bio-section p {
+		font-size: 0.9rem;
 	}
 
 	.auth-name {
 		text-align: center;
+		padding-bottom: 0.5rem;
+	}
+
+	.auth-name p {
+		font-size: 0.9rem;
 	}
 
 	.auth-name h1 {
-		font-size: 2.5rem;
+		font-size: 1.4rem;
+		text-align: center;
 	}
 
 	#skills {
@@ -485,15 +543,23 @@
 	}
 
 	#skills h2 {
-		font-size: 1.9rem;
+		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	#projects {
-		height: 620vh;
+		height: 770vh;
 	}
 
 	#projects h2 {
-		font-size: 1.9rem;
+		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.project-container {
@@ -529,11 +595,15 @@
 	}
 
 	#experience {
-		height: 480vh;
+		height: 570vh;
 	}
 
 	#experience h2 {
-		font-size: 1.9rem;
+		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.experience-container {
@@ -549,7 +619,11 @@
 	}
 
 	#contact h2 {
-		font-size: 1.9rem;
+		font-size: 2rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.contact-container {
@@ -565,13 +639,13 @@
 	}
 
 	footer {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 }
 
 @media screen and (max-width: 320px) {
 	.banner {
-		height: 15vh;
+		height: 21vh;
 	}
 
 	#introduction {
@@ -606,7 +680,7 @@
 	}
 
 	.nav-item {
-		margin: 1rem 0;
+		margin: 0.1rem 0;
 	}
 
 	.contact-container {
@@ -621,7 +695,6 @@
 	.pic-container {
 		width: 100px;
 		height: 100px;
-		margin-bottom: 1rem;
 	}
 
 	.pic-container img {
@@ -631,15 +704,25 @@
 	.bio-section {
 		text-align: center;
 		max-width: 100%;
-		margin-top: -2rem;
+		padding-top: 1rem;
+	}
+
+	.bio-section p {
+		font-size: 0.8rem;
 	}
 
 	.auth-name {
 		text-align: center;
+		padding-bottom: 0.4rem;
+	}
+
+	.auth-name p {
+		font-size: 0.8rem;
 	}
 
 	.auth-name h1 {
-		font-size: 2rem;
+		font-size: 1.3rem;
+		text-align: center;
 	}
 
 	.cv-button {
@@ -659,7 +742,7 @@
 	}
 
 	#projects {
-		height: 650vh;
+		height: 780vh;
 	}
 
 	#projects h2 {
@@ -679,7 +762,7 @@
 	}
 
 	.project-card h3 {
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 
 	.project-card p {
@@ -703,7 +786,7 @@
 	}
 
 	#experience {
-		height: 650vh;
+		height: 730vh;
 	}
 
 	#experience h2 {
@@ -723,7 +806,7 @@
 	}
 
 	.experience-card h3 {
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 
 	#contact h2 {
