@@ -10,8 +10,7 @@
 
 /* General Styles */
 body {
-	height: 1000vh;
-	margin: 0;
+	margin: 0 auto;
 	font-family: "Poppins", sans-serif;
 	background-color: #f8f8f0;
 }
@@ -55,8 +54,6 @@ section {
 }
 
 .pic-container {
-	width: 400px;
-	height: 400px;
 	border-radius: 50%;
 	overflow: hidden;
 }
@@ -89,6 +86,7 @@ section {
 	font-size: 3rem;
 	color: #362312;
 	border-bottom: 1px dotted #666;
+	font-family: 'Poppins';
 }
 
 .auth-name p {
@@ -317,7 +315,6 @@ section {
 }
 
 /*Contact Section*/
-/* Contact Section */
 #contact {
 	padding: 2rem;
 	background-color: #f8f8f0;
@@ -325,7 +322,7 @@ section {
 	padding: 2rem;
 	padding-top: 7rem;
 	margin: 0;
-	height: 100vh;
+	height: 110vh;
 }
 
 #contact h2 {
