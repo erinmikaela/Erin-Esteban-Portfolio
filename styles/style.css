@@ -48,8 +48,6 @@ section {
 	align-items: center;
 	gap: 2rem;
 	padding: 2rem;
-	min-height: 50vh;
-	max-height: 100vh;
 	margin: 0 auto;
 }
 
