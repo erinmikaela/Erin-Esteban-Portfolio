@@ -1,78 +1,409 @@
-/* Styles for screens up to 1200px */
-@media screen and (max-width: 1200px) {
-	#profile {
-		display: block;
+/* Styles for screens up to 1440px */
+@media screen and (max-width: 1440px) {
+	.banner {
+		height: 59vh;
 	}
 
-	section {
-		margin: 0 6%;
+	#projects {
+		height: 510vh;
+	}
+
+	#experience {
+		height: 300vh;
+	}
+}
+
+/* Styles for screens up to 1278px */
+@media screen and (max-width: 1278px) {
+	#introduction {
+		padding: 1rem;
+		flex-direction: row;
+		gap: 0;
+	}
+
+	.bio-section {
+		max-width: 300px;
+		margin-top: 4rem;
+	}
+
+	.auth-name {
+		margin-top: -7rem;
+	}
+
+	.auth-name h1 {
+		font-size: 2.5rem;
+		text-align: left;
+	}
+
+	.banner {
+		height: 70vh;
+	}
+
+	#skills {
+		height: 160vh;
+	}
+
+	#projects {
+		height: 470vh;
+	}
+
+	#experience {
+		height: 290vh;
+	}
+
+	#contact {
+		height: 140vh;
+	}
+}
+
+/* Styles for screens up to 1024px */
+@media screen and (max-width: 1024px) {
+	#introduction {
+		padding: 1rem;
+		flex-direction: row;
+		gap: 0;
+	}
+
+	.bio-section {
+		max-width: 300px;
+		margin-top: 4rem;
+	}
+
+	.auth-name {
+		margin-top: -7rem;
+	}
+
+	.auth-name h1 {
+		font-size: 2.5rem;
+		text-align: left;
 	}
 
 	.banner {
 		height: 49vh;
 	}
+
+	#skills {
+		height: 110vh;
+	}
+
+	#projects {
+		height: 430vh;
+	}
+
+	#experience {
+		height: 310vh;
+	}
 }
 
 /* Styles for screens up to 768px */
 @media screen and (max-width: 768px) {
-	#profile {
-		height: 85vh;
-		margin-bottom: 0;
-		flex-direction: column;
-		align-items: center;
+	#introduction {
+		padding: 1rem;
+		margin: 0 2rem;
+		display: flex;
+		justify-content: flex-start;
 	}
 
 	.hamburger-nav {
 		display: block;
-	}
-
-	/*Hamburger Menu Animation*/
-	.hamburger-nav.active .bar:nth-child(2) {
-		opacity: 0;
-	}
-
-	.hamburger-nav.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
-	}
-
-	.hamburger-nav.active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
+		cursor: pointer;
 	}
 
 	.nav-menu {
-		position: fixed;
-		left: -100%;
-		top: 70px;
-		gap: 0;
+		display: none;
 		flex-direction: column;
-		background-color: #f8f8f0;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		left: 0;
 		width: 100%;
-		text-align: center;
-		transition: 0.3s;
-	}
-
-	.nav-item {
-		margin: 16px 0;
+		background-color: #fff;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
 	}
 
 	.nav-menu.active {
-		left: 0;
+		display: flex;
+	}
+
+	.nav-item {
+		margin: 1rem 0;
 	}
 
 	.banner {
-		height: 35vh;
+		height: 37vh;
 	}
 
-	.flex-container {
+	.contact-container {
+		padding: 0.5rem;
+	}
+
+	.social-icon img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.bio-section {
+		max-width: 400px;
+		margin-top: -2rem;
+	}
+
+	.auth-name {
+		text-align: center;
+	}
+
+	.auth-name h1 {
+		font-size: 2rem;
+	}
+
+	#skills {
+		height: 90vh;
+	}
+
+	#skills h2 {
+		font-size: 2rem;
+	}
+
+	#projects {
+		height: 900vh;
+	}
+
+	#projects h2 {
+		font-size: 2rem;
+	}
+
+	.project-container {
 		flex-direction: column;
-		gap: 1rem;
+	}
+
+	.project-card {
+		width: 100%;
+	}
+
+	.project-card h3 {
+		font-size: 1.3rem;
+	}
+
+	.project-card p {
+		font-size: 0.9rem;
+		padding-top: 0.5rem;
+	}
+
+	.project-card div {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.project-card img {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	.project-card video {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	#experience {
+		height: 290vh;
+	}
+
+	#experience h2 {
+		font-size: 2rem;
+	}
+
+	.experience-container {
+		flex-direction: column;
+	}
+
+	.experience-card {
+		gap: 1.5rem;
+	}
+
+	.experience-card h3 {
+		font-size: 1.3rem;
+	}
+
+	#contact h2 {
+		font-size: 2rem;
+	}
+
+	.contact-container {
+		margin: 0 auto;
+	}
+
+	.form-container {
+		margin-top: 0.5rem;
+	}
+
+	.form-container label {
+		font-size: 0.9rem;
+	}
+
+	footer {
+		font-size: 1rem;
 	}
 }
 
 /* Styles for screens up to 425px */
 @media screen and (max-width: 425px) {
+	#introduction {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		margin: 0 2rem;
+		height: 90vh;
+	}
+
+	.hamburger-nav {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+	}
+
+	.nav-menu.active {
+		display: flex;
+	}
+
+	.nav-item {
+		margin: 1rem 0;
+	}
+
 	.banner {
 		height: 20vh;
+	}
+
+	.contact-container {
+		padding: 0.5rem;
+	}
+
+	.social-icon img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.pic-container {
+		width: 140px;
+		height: 140px;
+	}
+
+	.pic-container img {
+		border-radius: 50%;
+	}
+
+	.bio-section {
+		text-align: center;
+		max-width: 100%;
+		margin-top: -2rem;
+	}
+
+	.auth-name {
+		text-align: center;
+	}
+
+	.auth-name h1 {
+		font-size: 2.5rem;
+	}
+
+	#skills {
+		height: 80vh;
+	}
+
+	#skills h2 {
+		font-size: 2rem;
+	}
+
+	#projects {
+		height: 630vh;
+	}
+
+	#projects h2 {
+		font-size: 2rem;
+	}
+
+	.project-container {
+		flex-direction: column;
+	}
+
+	.project-card {
+		width: 100%;
+	}
+
+	.project-card h3 {
+		font-size: 1.3rem;
+	}
+
+	.project-card p {
+		font-size: 0.9rem;
+		padding-top: 0.5rem;
+	}
+
+	.project-card div {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.project-card img {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	.project-card video {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	#experience {
+		height: 430vh;
+	}
+
+	#experience h2 {
+		font-size: 2rem;
+	}
+
+	.experience-container {
+		flex-direction: column;
+	}
+
+	.experience-card {
+		gap: 1.5rem;
+	}
+
+	.experience-card h3 {
+		font-size: 1.3rem;
+	}
+
+	#contact h2 {
+		font-size: 2rem;
+	}
+
+	.contact-container {
+		margin: 0 1rem;
+	}
+
+	.form-container {
+		margin-top: 0.5rem;
+	}
+
+	.form-container label {
+		font-size: 0.9rem;
+	}
+
+	footer {
+		font-size: 0.9rem;
 	}
 }
 
@@ -80,23 +411,342 @@
 	.banner {
 		height: 18vh;
 	}
+
+	#introduction {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		margin: 0 1rem;
+		height: 100vh;
+	}
+
+	.hamburger-nav {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+	}
+
+	.nav-menu.active {
+		display: flex;
+	}
+
+	.nav-item {
+		margin: 1rem 0;
+	}
+
+	.contact-container {
+		padding: 1rem;
+	}
+
+	.social-icon img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.pic-container {
+		width: 150px;
+		height: 150px;
+		margin-bottom: 1rem;
+	}
+
+	.pic-container img {
+		border-radius: 50%;
+	}
+
+	.bio-section {
+		text-align: center;
+		max-width: 100%;
+		margin-top: -2rem;
+	}
+
+	.auth-name {
+		text-align: center;
+	}
+
+	.auth-name h1 {
+		font-size: 2.5rem;
+	}
+
+	#skills {
+		height: 80vh;
+	}
+
+	#skills h2 {
+		font-size: 1.9rem;
+	}
+
+	#projects {
+		height: 620vh;
+	}
+
+	#projects h2 {
+		font-size: 1.9rem;
+	}
+
+	.project-container {
+		flex-direction: column;
+	}
+
+	.project-card {
+		width: 100%;
+	}
+
+	.project-card h3 {
+		font-size: 1.3rem;
+	}
+
+	.project-card p {
+		font-size: 0.9rem;
+		padding-top: 0.5rem;
+	}
+
+	.project-card div {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.project-card img {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	.project-card video {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	#experience {
+		height: 480vh;
+	}
+
+	#experience h2 {
+		font-size: 1.9rem;
+	}
+
+	.experience-container {
+		flex-direction: column;
+	}
+
+	.experience-card {
+		gap: 1.5rem;
+	}
+
+	.experience-card h3 {
+		font-size: 1.3rem;
+	}
+
+	#contact h2 {
+		font-size: 1.9rem;
+	}
+
+	.contact-container {
+		margin: 0 1rem;
+	}
+
+	.form-container {
+		margin-top: 0.5rem;
+	}
+
+	.form-container label {
+		font-size: 0.9rem;
+	}
+
+	footer {
+		font-size: 0.8rem;
+	}
 }
 
 @media screen and (max-width: 320px) {
 	.banner {
 		height: 15vh;
 	}
-}
 
-/* Styles for screens larger than 1200px */
-@media screen and (min-width: 1301px) {
-	.banner {
-		height: 50vh;
+	#introduction {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column-reverse;
+		justify-content: flex-start;
+		margin: 0 2rem;
+		height: 110vh;
 	}
-}
 
-@media screen and (min-width: 1201px) {
-	.banner {
-		height: 60vh;
+	.hamburger-nav {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+	}
+
+	.nav-menu.active {
+		display: flex;
+	}
+
+	.nav-item {
+		margin: 1rem 0;
+	}
+
+	.contact-container {
+		padding: 0.5rem;
+	}
+
+	.social-icon img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.pic-container {
+		width: 100px;
+		height: 100px;
+		margin-bottom: 1rem;
+	}
+
+	.pic-container img {
+		border-radius: 50%;
+	}
+
+	.bio-section {
+		text-align: center;
+		max-width: 100%;
+		margin-top: -2rem;
+	}
+
+	.auth-name {
+		text-align: center;
+	}
+
+	.auth-name h1 {
+		font-size: 2rem;
+	}
+
+	.cv-button {
+		font-size: 0.7rem;
+	}
+
+	#skills {
+		height: 80vh;
+	}
+
+	#skills h2 {
+		font-size: 1.9rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#projects {
+		height: 650vh;
+	}
+
+	#projects h2 {
+		font-size: 1.9rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.project-container {
+		flex-direction: column;
+	}
+
+	.project-card {
+		width: 100%;
+	}
+
+	.project-card h3 {
+		font-size: 1.3rem;
+	}
+
+	.project-card p {
+		font-size: 0.9rem;
+		padding-top: 0.5rem;
+	}
+
+	.project-card div {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.project-card img {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	.project-card video {
+		width: 100%;
+		padding: 0.5rem 0;
+	}
+
+	#experience {
+		height: 650vh;
+	}
+
+	#experience h2 {
+		font-size: 1.9rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.experience-container {
+		flex-direction: column;
+	}
+
+	.experience-card {
+		gap: 1.5rem;
+	}
+
+	.experience-card h3 {
+		font-size: 1.3rem;
+	}
+
+	#contact h2 {
+		font-size: 1.9rem;
+		text-align: center;
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.contact-container {
+		margin: 0 1rem;
+	}
+
+	.form-container {
+		margin-top: 0.5rem;
+	}
+
+	.form-container label {
+		font-size: 0.9rem;
+	}
+
+	footer {
+		font-size: 0.7rem;
 	}
 }
