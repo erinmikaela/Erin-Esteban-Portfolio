@@ -6,6 +6,7 @@
 		<title>Erin Esteban</title>
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/media.css" />
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</head>
 	<body>
 		<div class="banner"></div>
@@ -52,21 +53,25 @@
 				</p>
 				<button
 					class="cv-button"
-					onclick="window.open('https:/github.com/erinmikaela/Erin-Esteban-Portfolio/blob/main/assets/Erin%20Esteban-CV.jpg?raw=true')"
+					onclick="downloadCV()"
 				>
 					Download CV
 				</button>
 				<button
 					class="github-button"
-					onclick="window.open('https:/github.com/erinmikaela')"
+					onclick="window.open('https://github.com/erinmikaela')"
 				></button>
 				<button
 					class="email-button"
-					onclick="window.open('mailto:erinmikaela.esteban@tup.edu.ph')"
+					onclick="sendMailto()"
 				></button>
 				<button
 					class="fb-button"
-					onclick="window.open('https:/www.facebook.com/onlylokii')"
+					onclick="window.open('https://www.facebook.com/erinmesteban')"
+				></button>
+				<button
+					class="linkedin-button"
+					onclick="window.open('https://www.linkedin.com/in/erin-mikaela-esteban')"
 				></button>
 			</div>
 			<div class="pic-container">
@@ -77,16 +82,13 @@
 			</div>
 			<div class="auth-name">
 				<h1>Erin Mikaela Esteban</h1>
-				<p>3rd Year BSIS Student in TUP-Manila</p>
+				<p>4th Year BSIS Student in TUP-Manila</p>
 			</div>
 		</section>
 		<section id="skills">
 			<h2>Skills</h2>
 			<div class="chart-container">
-				<img
-					src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/9cc833b59536b825b79b74674d4f9f5545024ff0/assets/skillschart.svg"
-					alt="Skills Chart"
-				/>
+				<canvas id="skillsChart" width="400" height="200"></canvas>
 			</div>
 		</section>
 		<section id="projects">
@@ -268,7 +270,7 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <div class="contact-container">
-        <form>
+        <form id="contactForm">
           <div class="form-container">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" required>
@@ -281,19 +283,19 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
-          <button type="submit" class="submit-button">Send</button>
+          <button type="button" class="submit-button" onclick="sendEmail()">Send</button>
         </form>
         <div class="social-media">
-          <a href="https:/www.facebook.com/onlylokii" class="social-icon">
+          <a href="https://www.facebook.com/erinmesteban" class="social-icon">
             <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/facebook-brands-solid.svg" alt="Facebook">
           </a>
-          <a href="mailto:erinmikaela.esteban@tup.edu.ph" class="social-icon">
+          <a href="mailto:erinmikaelaesteban@gmail.com" class="social-icon">
             <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/envelope-open-text-solid.svg" alt="Email">
           </a>
-          <a href="https://www.linkedin.com/login"  class="social-icon">
+          <a href="https://www.linkedin.com/in/erin-mikaela-esteban"  class="social-icon">
             <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/linkedin-brands-solid.svg" alt="LinkedIn">
           </a>
-          <a href="https:/github.com/erinmikaela" class="social-icon">
+          <a href="https://github.com/erinmikaela" class="social-icon">
             <img src="https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/github-brands-solid.svg" alt="GitHub">
           </a>
         </div>

@@ -162,6 +162,23 @@ section {
 	transform: scale(1.05);
 }
 
+.linkedin-button {
+	padding: 0.5rem 1rem;
+	margin: 0.5rem 0;
+	border: none;
+	width: 25px;
+	height: 25px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(https://raw.githubusercontent.com/erinmikaela/Erin-Esteban-Portfolio/f94ed1b98d9a63a1834c71cc2d890e79d0d4ff76/assets/linkedin-brands-solid.svg);
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin-button:hover {
+	transform: scale(1.05);
+}
 /*Skills Section*/
 #skills {
 	justify-content: center;
@@ -185,11 +202,17 @@ section {
 	padding-left: 2rem;
 }
 
-.chart-container img {
-	width: 100%;
-	height: auto;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.chart-container {
+    max-width: 1000px;
+    height: 450px; /* Increased height for image labels */
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.chart-container canvas {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 60px; /* Extra space for images and text */
 }
 
 /*Projects Section*/
