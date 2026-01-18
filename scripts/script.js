@@ -24,8 +24,8 @@ document.addEventListener('scroll', () => {
 
 function downloadCV() {
     const link = document.createElement('a');
-    link.href = 'assets/Erin-Esteban-CV.pdf';
-    link.download = 'Erin-Esteban-CV.pdf';
+    link.href = 'assets/Erin_Mikaela_Esteban_CV.pdf';
+    link.download = 'Erin_Mikaela_Esteban_CV.pdf';
     link.target = '_blank';
     
     document.body.appendChild(link);
